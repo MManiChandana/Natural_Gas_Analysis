@@ -174,6 +174,7 @@ RocCurveDisplay.from_estimator(best_model, X_test, y_test)
 plt.title(f"ROC Curve - {best_model_name}")
 plt.grid(True)
 plt.tight_layout()
+plt.savefig(f"visualizations3/roc_curve_{best_model_name.replace(' ', '_').lower()}.png")
 plt.show()
 
 # =========================================================
@@ -206,6 +207,7 @@ plt.title(f"Feature Importance - {best_model_name}")
 plt.xlabel("Importance / Coefficient")
 plt.ylabel("Feature")
 plt.tight_layout()
+plt.savefig(f"visualizations3/feature_importance_{best_model_name.replace(' ', '_').lower()}.png")
 plt.show()
 
 # =========================================================
